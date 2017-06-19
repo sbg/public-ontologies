@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ancf="http://nlp2rdf.lod2.eu/schema/string/"
+   xmlns:ccle="https://www.sbgenomics.com/ontologies/2016/5/ccle#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/12">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>STAD</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/24">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Salivary gland</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/46">
+    <rdfs:label>Papillary carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>SKCM</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/08">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE-COAD</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#File">
+    <rdfs:label>File</rdfs:label>
+    <rdfs:comment>This value is denoted by a list of file names associated with the File node.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <ccle:canStartQuery rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccle:canStartQuery>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Entity"/>
+    <ancf:anchorOf>file_uuid</ancf:anchorOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/analyte_type/02">
+    <rdfs:label>RNA</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#AnalyteType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/10">
+    <rdfs:label>Malignant fibrous histiocytoma-pleomorphic sarcoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/sample_type/01">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleType"/>
+    <rdfs:label>Cell Line</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/20">
+    <rdfs:label>CCLE-MESO</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasGender">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <ancf:anchorOf>gender</ancf:anchorOf>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasClinical"/>
+    <rdfs:comment>The collection of behaviors and attitudes that distinguish people on the basis of the societal roles expected for the two sexes. See NCI Thesaurus Code: C17357.</rdfs:comment>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has Gender</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/12">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Carcinoid-endocrine tumour</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/20">
+    <rdfs:label>Endometrium</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/12">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Stomach adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/21">
+    <rdfs:label>Uterine Corpus Endometrioid Carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasDataFormat">
+    <rdfs:label>has Data format</rdfs:label>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataFormat"/>
+    <rdfs:comment>The type of format that determines data content.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <ancf:anchorOf>data_format</ancf:anchorOf>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/35">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>B cell lymphoma unspecified</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasHistology">
+    <ancf:anchorOf>histology</ancf:anchorOf>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasClinical"/>
+    <rdfs:label>has Histology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:comment>The study of the structure of the cells and their arrangement to constitute tissues and, finally, the association among these to form organs. In pathology, the microscopic process of identifying normal and abnormal morphologic characteristics in tissues, by employing various cytochemical and immunocytochemical stains.See NCI Thesaurus Code: C16681</rdfs:comment>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Biospecimen"/>
+    <rdfs:label>Sample type</rdfs:label>
+    <rdfs:comment>The type of material taken from a biological entity for testing, diagnosis, propagation, treatment, or research purposes. This includes tissues, body fluids, cells, organs, embryos, body excretory products, etc. See NCI Thesaurus Code: C70713.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/06">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>LCLL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Rhabdoid tumour</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/22">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-PRAD</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/55">
+    <rdfs:label>Metaplasia</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/21">
+    <rdfs:label>Other</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/07">
+    <rdfs:label>Adenocarcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/data_format/01">
+    <rdfs:label>BAM</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataFormat"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/09">
+    <rdfs:label>Bladder Urothelial Carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasAnalyteType">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <ancf:anchorOf>analyte_type</ancf:anchorOf>
+    <rdfs:label>has Analyte type</rdfs:label>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#AnalyteType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>Defines the type of an analyte on molecular bases.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source">
+    <rdfs:comment>Source (commercial vendors or academic labs) that the cell lines were obtained from.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Biospecimen"/>
+    <rdfs:label>Source</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/52">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Adult T cell lymphoma-leukaemia</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-MM</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/01">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>NS</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/16">
+    <rdfs:label>Primitive neuroectodermal tumour-medulloblastoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL256C26">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenterCode">
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Alphanumerical values assigned to center that has submitted data</rdfs:comment>
+    <rdfs:label>Data submitting center code</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/39">
+    <rdfs:label>Undifferentiated carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/06">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Acute myeloid leukaemia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/09">
+    <rdfs:label>BLCA</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Program">
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The research program under which the data was generated. See NCI Thesaurus Code: C82662.</rdfs:comment>
+    <rdfs:label>Program</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL126C34">
+    <owl:unionOf rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine">
+    <rdfs:comment>A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. CCLE project used cancer cell lines. See NCI Thesaurus Code: C16403</rdfs:comment>
+    <ccle:canStartQuery rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccle:canStartQuery>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <ancf:anchorOf>cell_line_uuid</ancf:anchorOf>
+    <rdfs:label>CCLE Cell line</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasSampleType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleType"/>
+    <ancf:anchorOf>sample_type</ancf:anchorOf>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:comment>The type of material taken from a biological entity for testing, diagnosis, propagation, treatment, or research purposes. This includes tissues, body fluids, cells, organs, embryos, body excretory products, etc. See NCI Thesaurus Code: C70713.</rdfs:comment>
+    <rdfs:label>has Sample type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasBiospecimen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/data_submitting_center/02">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Broad Institute of MIT and Harvard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b8">
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#lastModifiedDate">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <ancf:anchorOf>last_modified_date</ancf:anchorOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>Last modified date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Skin Cutaneous Melanoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/09">
+    <rdfs:label>ICLC</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/gender/na">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Gender"/>
+    <rdfs:label>Not available</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/05">
+    <rdfs:label>CCLE-LGG</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology">
+    <rdfs:label>Histology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The study of the structure of the cells and their arrangement to constitute tissues and, finally, the association among these to form organs. In pathology, the microscopic process of identifying normal and abnormal morphologic characteristics in tissues, by employing various cytochemical and immunocytochemical stains.See NCI Thesaurus Code: C16681</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Clinical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation">
+    <rdfs:label>Investigation</rdfs:label>
+    <rdfs:comment>A value denoting the project or study that generated the data. See NCI Thesaurus Code: C41198.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/18">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Cervical squamous cell carcinoma and endocervical adenocarcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/11">
+    <rdfs:label>Giant cell tumour</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Aliquot">
+    <ccle:canStartQuery rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccle:canStartQuery>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The aliquot is a product or unit extracted from a sample or specimen 's portion and prepared for analysis. It can be identified by a Universally Unique Identifier (UUID).See NCI Thesaurus Code: C25414.</rdfs:comment>
+    <rdfs:label>Aliquot</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Entity"/>
+    <ancf:anchorOf>aliquot_uuid</ancf:anchorOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/test">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>TEST</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/gender/03">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Unknown</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/04">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Lymphoid neoplasm</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/08">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>COAD</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis">
+    <rdfs:comment>Diagnosis of a disease based on the type of tissue, where type is determined based on the microscopic examination of tissue. See NCI Thesaurus Code: C61478.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Histologic diagnosis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Clinical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/07">
+    <rdfs:label>CCLE-LUSC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/15">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-SKCM</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b2">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#uploadDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <ancf:anchorOf>upload_date</ancf:anchorOf>
+    <rdfs:label>Upload date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-STAD</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasFile">
+    <rdfs:domain rdf:nodeID="ub1bL256C26"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdfs:label>has File</rdfs:label>
+    <ancf:anchorOf>file_uuid</ancf:anchorOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>This value is denoted by a list of file names associated with the File node.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasDiseaseType">
+    <rdfs:label>has Disease type</rdfs:label>
+    <rdfs:comment>The type of the disease or condition studied. See NCI Thesaurus Code: C2991.</rdfs:comment>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <ancf:anchorOf>disease_type</ancf:anchorOf>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasClinical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>LIHC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b4">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Renal cell carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/42">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Serous carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE-LIHC</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/analyte_type/01">
+    <rdfs:label>DNA</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#AnalyteType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/sample_type_code/03">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleTypeCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/04">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Acute lymphoblastic T cell leukaemia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/08">
+    <rdfs:label>Large intestine</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/12">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdfs:label>Upper aerodigestive tract</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasPrimarySite">
+    <rdfs:label>has Primary site</rdfs:label>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasClinical"/>
+    <ancf:anchorOf>primary_site</ancf:anchorOf>
+    <rdfs:comment>The anatomical site where the primary tumor is located in the organism. See NCI Thesaurus Code: C43761.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasSubmitterId">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdfs:label>has Submitter ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <ancf:anchorOf>analysis_id</ancf:anchorOf>
+    <rdfs:comment>Analytical identification assigned by center that have submitted data.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b5">
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Aliquot"/>
+    <rdf:rest rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/05">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>LGG</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/20">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:label>Mesothelioma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/15">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Sarcoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE-ESCA</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#ExperimentalStrategy">
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdfs:comment>The method or protocol used to perform the laboratory analysis. See NCI Thesaurus Code: C43622.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Experimental strategy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasSource">
+    <ancf:anchorOf>source</ancf:anchorOf>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasBiospecimen"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:label>has Source</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>Source (commercial vendors or academic labs) that the cell lines were obtained from.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Giant cell tumour</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/01">
+    <rdfs:label>ATCC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b3">
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Aliquot"/>
+    <rdf:rest rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/36">
+    <rdfs:label>Mantle cell lymphoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/10">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:label>Lymphoid Neoplasm Diffuse Large B-cell Lymphoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/18">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Thyroid</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b1">
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdf:rest rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/14">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>MM</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Clinical">
+    <rdfs:label>Clinical</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdfs:label>Soft tissue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasSampleTypeCode">
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasBiospecimen"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleTypeCode"/>
+    <rdfs:label>has Sample type code</rdfs:label>
+    <rdfs:comment>Code that determines type of material taken from a biological entity for testing, diagnosis, propagation, treatment, or research purposes. This includes tissues, body fluids, cells, organs, embryos, body excretory products, etc. See NCI Thesaurus Code: C70713.</rdfs:comment>
+    <ancf:anchorOf>sample_type_code</ancf:anchorOf>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/20">
+    <rdfs:label>Clear cell renal cell carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/24">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Astrocytoma Grade IV</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/21">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Ovary</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/02">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Biliary tract</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/22">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Small intestine</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/03">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdfs:label>DSMZ</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/17">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdfs:label>Liver</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/62">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Embryonal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/03">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Breast</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/01">
+    <rdfs:label>CCLE-SARC</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/51">
+    <rdfs:label>Small cell adenocarcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/53">
+    <rdfs:label>Medullary carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/04">
+    <rdfs:label>CCLE-PAAD</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasExperimentalStrategy">
+    <rdfs:comment>The method or protocol used to perform the laboratory analysis. See NCI Thesaurus Code: C43622.</rdfs:comment>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#ExperimentalStrategy"/>
+    <ancf:anchorOf>experimental_strategy</ancf:anchorOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdfs:label>has Experimental strategy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/09">
+    <rdfs:label>Urinary tract</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Platform">
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Platform</rdfs:label>
+    <rdfs:comment>The version (for instance, manufacturer or model) of the technology that was used for sequencing or assaying. See NCI Thesaurus Code: C45378.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/na">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Not available</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/09">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-BLCA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasNote">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A brief written record. Provides info on cell line relations. See NCI Thesaurus Code:C42619</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle/dtp#hasClinical"/>
+    <ancf:anchorOf>note</ancf:anchorOf>
+    <rdfs:label>has Note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasProgram">
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Program"/>
+    <ancf:anchorOf>program</ancf:anchorOf>
+    <rdfs:label>has Program</rdfs:label>
+    <rdfs:comment>The research program under which the data was generated. See NCI Thesaurus Code: C82662.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/test">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:label>TEST</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#AccessLevel">
+    <rdfs:label>Access level</rdfs:label>
+    <rdfs:comment>A boolean value indicating Controlled Data or Open Data. Controlled Data is data from public datasets that has limitations on use and requires approval by dbGaP. Open Data is data from public datasets that doesn't have limitations on its use.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation">
+    <rdfs:label>Disease type abbreviation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Clinical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>An acronym or initials for disease type name or condition studied. See NCI Thesaurus Code: C2991.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology_diagnosis/03">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Alveolar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasClinical">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:label>has Clinical</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasAccessLevel">
+    <rdfs:comment>A boolean value indicating Controlled Data or Open Data. Controlled Data is data from public datasets that has limitations on use and requires approval by dbGaP. Open Data is data from public datasets that doesn't have limitations on its use.</rdfs:comment>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#AccessLevel"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <ancf:anchorOf>access_level</ancf:anchorOf>
+    <rdfs:label>has Access level</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Gender">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The collection of behaviors and attitudes that distinguish people on the basis of the societal roles expected for the two sexes. See NCI Thesaurus Code: C17357.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Clinical"/>
+    <rdfs:label>Gender</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleTypeCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Biospecimen"/>
+    <rdfs:label>Sample type code</rdfs:label>
+    <rdfs:comment>Code that determines type of material taken from a biological entity for testing, diagnosis, propagation, treatment, or research purposes. This includes tissues, body fluids, cells, organs, embryos, body excretory products, etc. See NCI Thesaurus Code: C70713.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/23">
+    <rdfs:label>Carcinosarcoma-malignant mesodermal mixed tumour</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#publishedDate">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdfs:label>Published date</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <ancf:anchorOf>published_date</ancf:anchorOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/13">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Leiomyosarcoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/data_submitting_center/01">
+    <rdfs:label>Baylor College of Medicine</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/21">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Blast phase chronic myeloid leukaemia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/16">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>THCA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasID">
+    <rdfs:domain rdf:nodeID="ub1bL499C24"/>
+    <rdfs:comment>A human-readable identifier, such as a number or a string that may contain metadata information. This identifier is often referred as submitter ID. See NCI Thesaurus Code: C54269.</rdfs:comment>
+    <rdfs:label>has ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle/dtp#hasBiospecimen"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/57">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Intestinal adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/18">
+    <rdfs:label>Hepatocellular carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/06">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Glioma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/experimental_strategy/01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>RNA-Seq</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#ExperimentalStrategy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/18">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE-CESC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/07">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>LUSC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/05">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Squamous cell carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/na">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Not available</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle/dtp#hasClinical">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>has Clinical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/sample_type/03">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleType"/>
+    <rdfs:label>Primary Tumor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasSampleName">
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle/dtp#hasBiospecimen"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Specific name given to material taken from a biological entity for testing, diagnosis, propagation, treatment, or research purposes. This includes tissues, body fluids, cells, organs, embryos, body excretory products, etc. See NCI Thesaurus Code: C70713.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:label>has Sample name</rdfs:label>
+    <ancf:anchorOf>sample_name</ancf:anchorOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/31">
+    <rdfs:label>Burkitt lymphoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/06">
+    <rdfs:label>Haematopoietic and lymphoid tissue</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/platform/illumina">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Platform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Illumina</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/03">
+    <rdfs:label>CCLE-BRCA</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Biospecimen">
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Biospecimen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasPlatform">
+    <rdfs:comment>The version (for instance, manufacturer or model) of the technology that was used for sequencing or assaying. See NCI Thesaurus Code: C45378.</rdfs:comment>
+    <ancf:anchorOf>platform</ancf:anchorOf>
+    <rdfs:label>has Platform</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Platform"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasCCLECellLine">
+    <rdfs:domain rdf:nodeID="ub1bL126C34"/>
+    <ancf:anchorOf>cell_line_uuid</ancf:anchorOf>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. CCLE project used cancer cell lines. See NCI Thesaurus Code: C16403</rdfs:comment>
+    <rdfs:label>has CCLE Cell line</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/03">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Breast invasive carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>ESCA</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>SARC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/30">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Oligodendroglioma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/05">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Autonomic ganglia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Fibrosarcoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/21">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-UCEC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/07">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:label>Lung squamous cell carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/program/ccle">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/experimental_strategy/03">
+    <rdfs:label>WXS</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#ExperimentalStrategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenter">
+    <rdfs:comment>This field takes a string denoting the name of the center that has submitted data.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Data submitting center</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasHistologicDiagnosis">
+    <rdfs:label>has Histologic diagnosis</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:comment>Diagnosis of a disease based on the type of tissue, where type is determined based on the microscopic examination of tissue. See NCI Thesaurus Code: C61478.</rdfs:comment>
+    <ancf:anchorOf>histologic_diagnosis</ancf:anchorOf>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasClinical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/gender/02">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Gender"/>
+    <rdfs:label>Female</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#ReferenceGenome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdfs:comment>The reference assembly (such as HG19 or GRCh37) to which the nucleotide sequence of a case can be aligned.</rdfs:comment>
+    <rdfs:label>Reference genome</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/01">
+    <rdfs:label>Sarcoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>KCLB</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasDiseaseTypeAbbreviation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <ancf:anchorOf>disease_type_abbr</ancf:anchorOf>
+    <rdfs:label>has Disease type abbreviation</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasClinical"/>
+    <rdfs:comment>An acronym or initials for disease type name or condition studied. See NCI Thesaurus Code: C2991.</rdfs:comment>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE-DLBC</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/data_submitting_center_code/03">
+    <rdfs:label>WUGSC</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenterCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasBiospecimen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has Biospecimen</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/05">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Brain Lower Grade Glioma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/sample_type_code/01">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleTypeCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/access_level/open">
+    <rdfs:label>Open</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#AccessLevel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/07">
+    <rdfs:label>Ewings sarcoma-peripheral primitive neuroectodermal tumour</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/07">
+    <rdfs:label>Lung</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/21">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>UCEC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasDataSubmittingCenter">
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has Data submitting center</rdfs:label>
+    <rdfs:comment>This field takes a string denoting the name of the center that has submitted data.</rdfs:comment>
+    <ancf:anchorOf>data_submitting_center</ancf:anchorOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasReferenceGenome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#ReferenceGenome"/>
+    <rdfs:label>has Reference genome</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <ancf:anchorOf>reference_genome</ancf:anchorOf>
+    <rdfs:comment>The reference assembly (such as HG19 or GRCh37) to which the nucleotide sequence of a case can be aligned.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/09">
+    <rdfs:label>Malignant melanoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/data_submitting_center_code/01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenterCode"/>
+    <rdfs:label>BCM</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#canStartQuery">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Entity"/>
+    <rdfs:label>can start query</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/13">
+    <rdfs:label>Multiple Myeloma Plasma cell leukemia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasAliquot">
+    <ancf:anchorOf>aliquot_uuid</ancf:anchorOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has Aliquot</rdfs:label>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Aliquot"/>
+    <rdfs:domain rdf:nodeID="ub1bL80C29"/>
+    <rdfs:comment>The aliquot is a product or unit extracted from a sample or specimen 's portion and prepared for analysis. It can be identified by a Universally Unique Identifier (UUID).See NCI Thesaurus Code: C25414.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/14">
+    <rdfs:label>Chondrosarcoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/28">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Undifferentiated adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/test">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-TEST</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#AnalyteType">
+    <rdfs:comment>Defines the type of an analyte on molecular bases.</rdfs:comment>
+    <rdfs:label>Analyte type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/41">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Mucinous carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MESO</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b7">
+    <rdf:rest rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b8"/>
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Aliquot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasFileSize">
+    <rdfs:label>has File size</rdfs:label>
+    <rdfs:comment>Size of a file measured in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and larger values.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <ancf:anchorOf>file_size</ancf:anchorOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Plasma cell myeloma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE-HNSC</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL80C29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/17">
+    <rdfs:label>Kidney renal clear cell carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/33">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Mycosis fungoides-Sezary syndrome</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/37">
+    <rdfs:label>Mucoepidermoid carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/10">
+    <rdfs:label>Bone</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/na">
+    <rdfs:label>Not available</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/14">
+    <rdfs:label>Oesophagus</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/50">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Endometrioid carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/03">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Neuroblastoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/reference_genome/01">
+    <rdfs:label>HG19_Broad_variant</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#ReferenceGenome"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/56">
+    <rdfs:label>Gliosarcoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/43">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Follicular carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/16">
+    <rdfs:label>CCLE-THCA</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/06">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+    <rdfs:label>CCLE-LCLL</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/54">
+    <rdfs:label>Granulosa cell tumour</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasInvestigation">
+    <rdfs:label>has Investigation</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdfs:comment>A value denoting the project or study that generated the data. See NCI Thesaurus Code: C41198.</rdfs:comment>
+    <ancf:anchorOf>investigation</ancf:anchorOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataFormat">
+    <rdfs:comment>The type of format that determines data content.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Data format</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/32">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Diffuse adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/04">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Pancreatic adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Rhabdomyosarcoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/15">
+    <rdfs:label>Non small cell carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType">
+    <rdfs:label>Disease type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The type of the disease or condition studied. See NCI Thesaurus Code: C2991.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Clinical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/17">
+    <rdfs:label>CCLE-KIRC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/14">
+    <rdfs:label>Chronic lymphocytic leukaemia-small lymphocytic lymphoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/gender/01">
+    <rdfs:label>Male</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Gender"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/02">
+    <rdfs:label>Liver hepatocellular carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/22">
+    <rdfs:label>PRAD</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/22">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Hodgkin lymphoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/investigation/19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CCLE-OV</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Investigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Ductal carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/13">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Acute lymphoblastic B cell leukaemia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/11">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>HNSC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/11">
+    <rdfs:label>Osteosarcoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/23">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Prostate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/22">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:label>Prostate adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/15">
+    <rdfs:label>Esophageal carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/sample_type/02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleType"/>
+    <rdfs:label>EBV Immortalized Normal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/12">
+    <rdfs:label>Astrocytoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/09">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Transitional cell carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/04">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>PAAD</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/18">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Sex cord-stromal tumour</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/08">
+    <rdfs:label>Colon adenocarcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/44">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Signet ring adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/08">
+    <rdfs:label>Mesothelioma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:label>Head and Neck squamous cell carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/61">
+    <rdfs:label>Peripheral T cell lymphoma unspecified</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle/dtp#hasBiospecimen">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:label>has Biospecimen</rdfs:label>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Utility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Utility</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL499C24">
+    <owl:unionOf rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/sample_type_code/02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#SampleTypeCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/58">
+    <rdfs:label>Brenner tumour</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/05">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdfs:label>RIKEN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/string/anchorOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/47">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Dedifferentiated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/29">
+    <rdfs:label>Mixed adenosquamous carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/data_submitting_center_code/02">
+    <rdfs:label>BI</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenterCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/08">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Small cell carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#hasDataSubmittingCenterCode">
+    <ancf:anchorOf>data_submitting_center_code</ancf:anchorOf>
+    <rdfs:comment>Alphanumerical values assigned to center that has submitted data</rdfs:comment>
+    <rdfs:label>has Data submitting center code</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenterCode"/>
+    <rdfs:domain rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#File"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/45">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Anaplastic large cell lymphoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/38">
+    <rdfs:label>Chronic myeloid leukaemia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/05">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Haematopoietic neoplasm</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histology/02">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Histology"/>
+    <rdfs:label>Carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/49">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Papilloma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/26">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Clear cell carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/48">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Tubular adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/59">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Astrocytoma Grade III</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/06">
+    <rdfs:label>Academic Lab</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/11">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdfs:label>Central nervous system</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/data_submitting_center/03">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DataSubmittingCenter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Washington University School of Medicine</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/10">
+    <rdfs:label>Diffuse large B cell lymphoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/27">
+    <rdfs:label>Mixed carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Primary site</rdfs:label>
+    <rdfs:comment>The anatomical site where the primary tumor is located in the organism. See NCI Thesaurus Code: C43761.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Clinical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/08">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdfs:label>NCI/DCTD</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/16">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Skin</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/06">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdfs:label>Chronic Lymphocytic Leukemia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Kidney</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/15">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Pleura</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/experimental_strategy/02">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#ExperimentalStrategy"/>
+    <rdfs:label>WGS</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/reference_genome/02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>GRCh37-lite</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#ReferenceGenome"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/16">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Thyroid carcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/13">
+    <rdfs:label>Stomach</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/18">
+    <rdfs:label>CESC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/40">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Bronchioloalveolar adenocarcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/03">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>BRCA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/60">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Essential thrombocythaemia</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/07">
+    <rdfs:label>ECACC</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/na">
+    <rdfs:label>Not available</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/16">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdfs:label>Large cell carcinoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>DLBC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/primary_site/04">
+    <rdfs:label>Pancreas</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#PrimarySite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle#Entity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/34">
+    <rdfs:label>Hepatoblastoma</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/17">
+    <rdfs:label>KIRC</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/source/04">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#Source"/>
+    <rdfs:label>HSRRB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fcff5432ec91040cfa130fd5fab709b39b6">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#CCLECellLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ontologies/2016/5/ccle/ccle-ontology">
+    <rdfs:comment>CCLE ontology</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type_abbr/19">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseTypeAbbreviation"/>
+    <rdfs:label>OV</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/19">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Anaplastic carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/histologic_diagnosis/63">
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#HistologicDiagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Metaplastic carcinoma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.sbgenomics.com/ccle/disease_type/19">
+    <rdfs:label>Ovarian serous cystadenocarcinoma</rdfs:label>
+    <rdf:type rdf:resource="https://www.sbgenomics.com/ontologies/2016/5/ccle#DiseaseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+</rdf:RDF>
